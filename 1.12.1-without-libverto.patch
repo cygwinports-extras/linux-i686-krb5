@@ -1,0 +1,11 @@
+These libraries aren't used outside of krb5-server anyway
+
+--- origsrc/krb5-1.12.1/src/lib/Makefile.in	2014-01-15 18:44:15.000000000 -0600
++++ src/krb5-1.12.1/src/lib/Makefile.in	2014-06-09 18:36:55.448175100 -0500
+@@ -1,5 +1,5 @@
+ mydir=lib
+-SUBDIRS=crypto krb5 gssapi rpc kdb kadm5 apputils krad
++SUBDIRS=crypto krb5 gssapi rpc kdb kadm5 # apputils krad
+ WINSUBDIRS=crypto krb5 gssapi
+ BUILDTOP=$(REL)..
+ 
